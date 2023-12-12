@@ -290,9 +290,8 @@
     if (Math.abs(deltaY) > 1.2) {
       deltaY *= options.stepSize / 120;
     }
-
+    console.log(event)
     scrollArray(overflowing, -deltaX, -deltaY);
-    event.preventDefault();
   }
 
   /**
