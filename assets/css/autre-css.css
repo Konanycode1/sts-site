@@ -21,6 +21,11 @@ p .services {
     top: 40%;
 
 }
+
+.card-img-top{
+    width: 250px;
+    height: 200px;
+}
 .imageSlide{
     filter: grayscale(80%);
 }
