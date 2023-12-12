@@ -290,8 +290,9 @@
     if (Math.abs(deltaY) > 1.2) {
       deltaY *= options.stepSize / 120;
     }
-    console.log(event)
+    // console.log(event)
     scrollArray(overflowing, -deltaX, -deltaY);
+    event.preventDefault();
   }
 
   /**
@@ -421,7 +422,7 @@
    ***********************************************/
 
   function addEvent(type, fn, bubble) {
-    window.addEventListener(type, fn, (bubble||false));
+    window.addEventListener(type, fn, (bubble||true));
   }
 
   function removeEvent(type, fn, bubble) {
@@ -515,7 +516,7 @@
 
   if (isMouseWheelSupported && isChrome) {
     addEvent("mousedown", mousedown);
-    addEvent("mousewheel", wheel);
+    addEvent("DOMMouseScroll", wheel, false);
     addEvent("load", init);
   };
 

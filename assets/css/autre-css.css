@@ -88,8 +88,13 @@ p .services {
     .top-right span{
         display: inline-block;
         vertical-align: middle
-    }@media (max-width: 768px){
-        .card-img-top-produit{max-height: 250px}}
+    }
+    @media (max-width: 768px){
+        .card-img-top-produit{
+            max-height: 250px;
+            width: 100%;
+        }
+    }
         .over-bg{
             background: rgba(53, 53, 53, 0.85);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -137,8 +142,16 @@ p .services {
 .thumb-sec{max-width: 300px}
 @media (max-width: 576px){
     .box-img{max-width: 200px}
-    .thumb-sec{max-width: 200px}}
-    .inner-gallery{width: 60px;height: 60px;border: 1px solid #ddd;border-radius: 3px;margin: 1px;display: inline-block;overflow: hidden;-o-object-fit: cover;object-fit: cover}
-@media (max-width: 370px){.box .btn{padding: 5px 40px 5px 40px;font-size: 1rem}}
+    .thumb-sec{max-width: 200px}
+}
+    .inner-gallery{
+        width: 60px;
+        height: 60px;
+        border: 1px solid #ddd;border-radius: 3px;margin: 1px;display: inline-block;overflow: hidden;-o-object-fit: cover;object-fit: cover
+    }
+
+@media (max-width: 370px){
+    .box .btn{padding: 5px 40px 5px 40px;font-size: 1rem}
+}
 .disclaimer{font-size: .9rem;color: darkgray}
 .related h3{font-weight: 900}
