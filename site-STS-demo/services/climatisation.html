@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>recrutement</title>
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+
+    <body class="bg-white">
+        
+        <!-- home section -->
+        <section class="py-8 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <nav class="flex-wrap lg:flex items-center justify-between mb-20 lg:mb-40" x-data="{navbarOpen:false}">
+                    <div class="flex items-center justify-between mb-10 lg:mb-0">
+                        <img src="../assets/image/logo.png" alt="Logo" style="width: 100px; height: 100px;">
+
+                        <button class="flex items-center justify-center border border-green-500 w-10 h-10 text-green-500 rounded-md outline-none lg:hidden ml-auto" @click="navbarOpen = !navbarOpen">
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+
+                    <ul class="hidden lg:block lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20" :class="{'hidden':!navbarOpen,'flex':navbarOpen}">
+                        <li class="font-medium  text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="#" style="color: orangered;">Accueil</a>
+                        </li>
+
+                        <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="#about"  style="color: orangered;">À propos</a>
+                        </li>
+
+                        <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="#domaine"  style="color: orangered;">Domaines Recherchés</a>
+                        </li>
+
+                        <li class="font-medium text-green-500 text-lg hover:text-green-300 transition ease-in-out duration-300 mb-5 lg:mb-0">
+                            <a href="#candidature"  style="color: orangered;">Processus de Candidature</a>
+                        </li>
+
+                       <li style="border-color: orangered;" class="px-8 py-3 font-medium  text-lg text-center border-2  rounded-md hover:bg-green-500 hover:text-white transition ease-linear duration-300">
+                        <a href="#contact"  style="color: orangered;">Contact</a>
+                   </li>
+                    </ul>
+                </nav>
+
+                <header class="flex-col xl:flex-row flex justify-between">
+
+                    <div class="mx-auto text-center xl:text-left xl:mx-0 mb-20 xl:mb-0">
+                        <h1 class="font-bold text-gray-700 text-3xl md:text-6xl leading-tight mb-10">Sécurisé vos bien Avec Synergie Tech Solutions </h1>
+
+                        <p class="font-normal text-gray-500 text-sm md:text-lg mb-10">Votre compagnons de sécurité electronique, tres professionnel avec une expérience de plus de 10 Ans.</p>
+
+                        
+                    </div>
+
+                    <div class="mx-auto xl:mx-0">
+                        <img src="../assets/image/home-img.svg" alt="Image">
+                    </div>
+
+                </header>
+
+            </div> <!-- container.// -->
+
+        </section>
+        <!-- home section //end -->
+
+
+        <section class="py-12">
+            <div class="container mx-auto px-4">
+                <!-- Titre du Service -->
+                <h2 class="text-3xl font-bold mb-6 text-center">Service d'Installation et de Maintenance de Climatisation</h2>
+        
+                <!-- Description du Service -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-10">
+                    <h3 class="text-xl font-semibold mb-4">Explication du Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        Notre service d'installation et de maintenance de climatisation vous assure un confort optimal en toutes saisons. Nous proposons des solutions de climatisation adaptées à vos besoins, que ce soit pour des espaces résidentiels, commerciaux ou industriels. Nos techniciens expérimentés prennent en charge toutes les étapes, de l'installation à la maintenance préventive et corrective.
+                    </p>
+                    <h4 class="text-lg font-semibold mb-2">Prestations Proposées :</h4>
+                    <ul class="list-disc list-inside mb-4 text-gray-600">
+                        <li><strong>Installation de climatisation</strong> : Mise en place de systèmes de climatisation performants et adaptés à la taille et l'usage de chaque espace.</li>
+                        <li><strong>Maintenance préventive et corrective</strong> : Vérification régulière pour assurer un fonctionnement optimal et éviter les pannes.</li>
+                        <li><strong>Nettoyage et recharge de gaz</strong> : Entretien des unités pour garantir la performance et prolonger la durée de vie des équipements.</li>
+                        <li><strong>Conseil en optimisation énergétique</strong> : Solutions pour minimiser la consommation énergétique tout en maximisant le confort.</li>
+                    </ul>
+                    <p class="text-gray-600">Nous nous engageons à offrir des services professionnels et rapides, pour un confort durable et une efficacité énergétique maximale.</p>
+                </div>
+        
+                <!-- Formulaire de Demande de Service -->
+                <form action="/submit-service-request" method="post" enctype="multipart/form-data" class="bg-white p-6 rounded-lg shadow-lg">
+                    <!-- Nom de l'entreprise -->
+                    <div class="mb-4">
+                        <label for="company_name" class="block text-sm font-semibold text-gray-700">Nom de l'entreprise</label>
+                        <input type="text" id="company_name" name="company_name" required class="mt-1 p-2 border rounded w-full">
+                    </div>
+        
+                    <!-- Année d'existence -->
+                    <div class="mb-4">
+                        <label for="year_of_existence" class="block text-sm font-semibold text-gray-700">Année d'existence</label>
+                        <input type="number" id="year_of_existence" name="year_of_existence" required class="mt-1 p-2 border rounded w-full">
+                    </div>
+        
+                    <!-- Nom du gérant -->
+                    <div class="mb-4">
+                        <label for="manager_name" class="block text-sm font-semibold text-gray-700">Nom du gérant</label>
+                        <input type="text" id="manager_name" name="manager_name" required class="mt-1 p-2 border rounded w-full">
+                    </div>
+        
+                    <!-- Email du gérant ou de l'entreprise -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-semibold text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 p-2 border rounded w-full">
+                    </div>
+        
+                    <!-- Upload de fichiers multiples -->
+                    <div class="mb-6">
+                        <label for="documents" class="block text-sm font-semibold text-gray-700">Télécharger des documents</label>
+                        <input type="file" id="documents" name="documents[]" multiple class="mt-1 p-2 border rounded w-full">
+                        <small class="text-gray-500">Vous pouvez télécharger plusieurs fichiers.</small>
+                    </div>
+        
+                    <!-- Bouton d'envoi -->
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-200">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        
+        
+
+       
+
+     
+        
+        
+
+        <footer class="bg-green-50 py-8 md:py-16">
+
+            <div class="container max-w-screen-xl mx-auto px-4">
+
+                <div class="lg:flex flex-col md:flex-row text-center lg:text-left lg:justify-between">
+                    <div class="mb-10 lg:mb-0">
+                        <img src="../assets/image/logo.png" alt="Image" class="mb-5 mx-auto lg:mx-0 w-20 h-20">
+    
+                        <p class="font-normal text-gray-400 text-md w-20 h-20 font-bold">Synergie Tech Solutions</p>
+                    </div>
+
+                    
+
+                    <div class="space-y-4 mb-10 lg:mb-0">
+                        <h4 class="font-semibold text-gray-500 text-lg mb-6">Sections</h4>
+
+                        <a href="#about" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">A propos</a>
+
+                        <a href="#domaine" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Domaines Recherchés</a>
+
+                        <a href="#candidature" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">Processus de candidature</a>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-gray-500 text-lg mb-6">Infos</h4>
+
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">COCODY, 2 plateaux, Derrière le Super Marché SOCOCE</a>
+
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">+225 25 22 02 90 53</a>
+
+                        <a href="#" class="block font-normal text-gray-400 text-md hover:text-gray-700 transition ease-in-out duration-300">synergie@yahoo.fr</a>
+                    </div>
+                </div>
+
+                <hr class="text-gray-300 mt-10">
+
+                <p class="font-normal text-gray-400 text-md text-center mt-5">&copy; 2024 CONHOU I. All rights reserved.</p>
+
+            </div> <!-- container.// -->
+
+        </footer>
+
+
+        <script src="https://unpkg.com/feather-icons"></script>
+
+        <script>
+            feather.replace()
+        </script>
+
+    </body>
+</html>
