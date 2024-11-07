@@ -192,11 +192,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   border: 2px solidrgb(251,28,28);
   font-weight: 600;
+  background-color: #ed3c0d;
 }
 
 .navbar .getstarted:hover {
   color: #fff;
-  background: #31a9e1;
+  background: #f65454;
 }
 
 .navbar .dropdown ul {
